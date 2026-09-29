@@ -13,7 +13,10 @@
     "llm"
   ],
   "license": "MIT",
-  "author": "",
+  "author": {
+    "name": "Dien Ho",
+    "url": "https://ppcblogpro.com/"
+  },
   "homepage": "https://github.com/dienhokhanh/ga4-mcp-server#readme",
   "repository": {
     "type": "git",

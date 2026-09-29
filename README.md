@@ -8,6 +8,8 @@ A [Model Context Protocol](https://modelcontextprotocol.io) server for **Google 
 
 Works with **Claude Code, Claude Desktop, OpenAI Codex, Cursor, VS Code (Copilot), Gemini CLI, Windsurf** and any other MCP client.
 
+Built and maintained by [Dien Ho](https://github.com/dienhokhanh) of [PPCBlogPro](https://ppcblogpro.com/), a blog on PPC, analytics and AI marketing tools.
+
 - 📊 **Reports**: standard, pivot, realtime and batched reports with filters, sorting, totals and date comparisons
 - 🔎 **Discovery**: accounts, properties, data streams, dimension/metric catalogue, compatibility checks
 - 🏷️ **Friendly property lookup**: say `"My Blog"` instead of `properties/123456789`
@@ -187,6 +189,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Privacy & security
 
 The server runs locally and talks only to Google's Analytics APIs. Report data goes to the AI client you connect it to, so treat it as you would any analytics export. Never commit credential files. See [SECURITY.md](SECURITY.md).
+
+## Author
+
+Made by **Dien Ho**. I write about Google Ads, LinkedIn Ads, GA4 measurement and AI tools for marketers at **[PPCBlogPro.com](https://ppcblogpro.com/)**. If this server saves you time, a ⭐ on GitHub or a visit to the blog is appreciated.
 
 ## License
 
