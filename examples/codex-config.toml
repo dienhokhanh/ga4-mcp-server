@@ -1,0 +1,10 @@
+# Add to ~/.codex/config.toml
+[mcp_servers.ga4]
+command = "npx"
+args = ["-y", "ga4-mcp-server"]
+startup_timeout_sec = 30
+
+[mcp_servers.ga4.env]
+GOOGLE_APPLICATION_CREDENTIALS = "/absolute/path/to/service-account.json"
+GA4_DEFAULT_PROPERTY = "123456789"
+# GA4_MCP_ENABLE_WRITES = "true"

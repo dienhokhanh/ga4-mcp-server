@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "ga4": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "ga4-mcp-server"],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "${GOOGLE_APPLICATION_CREDENTIALS}",
+        "GA4_DEFAULT_PROPERTY": "123456789"
+      }
+    }
+  }
+}

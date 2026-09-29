@@ -1,0 +1,73 @@
+{
+  "name": "ga4-mcp-server",
+  "version": "0.1.0",
+  "description": "Model Context Protocol (MCP) server for Google Analytics 4 — run reports, explore metadata and manage GA4 properties from Claude, Codex, Cursor, VS Code and any MCP client.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "google-analytics",
+    "ga4",
+    "analytics",
+    "claude",
+    "codex",
+    "llm"
+  ],
+  "license": "MIT",
+  "author": "",
+  "homepage": "https://github.com/dienhokhanh/ga4-mcp-server#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dienhokhanh/ga4-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dienhokhanh/ga4-mcp-server/issues"
+  },
+  "mcpName": "io.github.dienhokhanh/ga4-mcp-server",
+  "type": "module",
+  "bin": {
+    "ga4-mcp-server": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js",
+    "smoke": "node scripts/smoke.mjs",
+    "prepublishOnly": "npm run build",
+    "docs": "node scripts/gen-tools-doc.mjs"
+  },
+  "dependencies": {
+    "@google-analytics/admin": "^10.1.1",
+    "@google-analytics/data": "^7.2.1",
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "google-auth-library": "^11.1.0",
+    "open": "^11.0.4",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.20.4",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.9",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.71.0",
+    "vitest": "^5.0.2"
+  }
+}

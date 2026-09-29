@@ -1,0 +1,43 @@
+name: Bug report
+description: Something isn't working
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "⚠️ Don't paste credentials, tokens or private report data."
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you ask the assistant, which tool was called, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Error message / server log
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: ga4-mcp-server version
+      placeholder: "npx ga4-mcp-server --version"
+    validations:
+      required: true
+  - type: dropdown
+    id: client
+    attributes:
+      label: MCP client
+      options: [Claude Code, Claude Desktop, OpenAI Codex, Cursor, VS Code, Gemini CLI, Windsurf, Other]
+    validations:
+      required: true
+  - type: dropdown
+    id: auth
+    attributes:
+      label: Authentication method
+      options: [Service account, Browser sign-in (auth command), gcloud ADC]
+  - type: input
+    id: os
+    attributes:
+      label: OS and Node.js version
+      placeholder: "macOS 15, Node 22.12"

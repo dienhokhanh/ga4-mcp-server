@@ -1,0 +1,16 @@
+name: Feature request
+description: Suggest a new tool, prompt or improvement
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do?
+      description: Describe the question you want to ask GA4 or the task you want to automate.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Which GA4 API endpoint or tool shape would help?

@@ -1,0 +1,19 @@
+{
+  "inputs": [
+    {
+      "id": "ga4-key",
+      "type": "promptString",
+      "description": "Path to your Google service account JSON key"
+    }
+  ],
+  "servers": {
+    "ga4": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "ga4-mcp-server"],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "${input:ga4-key}"
+      }
+    }
+  }
+}

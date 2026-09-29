@@ -1,0 +1,41 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.dienhokhanh/ga4-mcp-server",
+  "title": "Google Analytics 4",
+  "description": "Run GA4 reports, explore dimensions/metrics and manage GA4 property configuration.",
+  "repository": {
+    "url": "https://github.com/dienhokhanh/ga4-mcp-server",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "ga4-mcp-server",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOOGLE_APPLICATION_CREDENTIALS",
+          "description": "Path to a Google service account JSON key with Viewer access to your GA4 properties (optional if using browser sign-in or gcloud ADC).",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "filepath"
+        },
+        {
+          "name": "GA4_DEFAULT_PROPERTY",
+          "description": "Default GA4 property ID or display name.",
+          "isRequired": false
+        },
+        {
+          "name": "GA4_MCP_ENABLE_WRITES",
+          "description": "Set to true to enable tools that modify GA4 configuration.",
+          "isRequired": false,
+          "default": "false"
+        }
+      ]
+    }
+  ]
+}

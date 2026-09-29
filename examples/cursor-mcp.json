@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "ga4": {
+      "command": "npx",
+      "args": ["-y", "ga4-mcp-server"],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "/absolute/path/to/service-account.json"
+      }
+    }
+  }
+}
