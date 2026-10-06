@@ -57,7 +57,7 @@
   "dependencies": {
     "@google-analytics/admin": "^10.1.1",
     "@google-analytics/data": "^7.2.1",
-    "@modelcontextprotocol/sdk": "^1.31.0",
+    "@modelcontextprotocol/sdk": "^1.32.0",
     "google-auth-library": "^11.1.0",
     "open": "^11.0.4",
     "zod": "^4.6.5"
